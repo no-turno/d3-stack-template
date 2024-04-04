@@ -1,0 +1,31 @@
+preload = ["./scripts/preload.ts"]
+jsx = "react-jsx"
+jsxImportSource = "react"
+logLevel = "warn"
+telemetry = false
+
+[define]
+"process.env.VITE_CLIENT_PORT" = "'3000'"
+"process.env.SERVER_PORT" = "'8080'"
+"process.env.RUNTIME_ID" = "'bun'"
+"process.env.CODEPARK_HOME" = "'.codepark'"
+
+[loader]
+".tsx" = "tsx"
+".ts" = "ts"
+".jsx" = "jsx"
+".js" = "js"
+".css" = "css"
+".wasm" = "wasm"
+".html" = "file"
+
+[install]
+auto = true
+
+[test]
+root = "./__tests__"
+preload = ["./__tests__/happy-dom.ts"]
+smol = true
+coverageIgnoreSourcemaps = true
+# coverage = true
+# coverageThreshold = 0.9
