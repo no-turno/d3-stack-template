@@ -1,18 +1,35 @@
 {
   "name": "d3-stack-template",
   "private": true,
-  "version": "0.0.0",
   "license": "MIT",
   "author": {
     "name": "Davi Spindola",
     "email": "davi.codepark@sent.com"
   },
+  "repository": {
+    "url": "https://github.com/no-turno/d3-stack-template",
+    "directory": "",
+    "type": "git"
+  },
+  "description": "D3 Quickstart template",
+  "bugs": {
+    "email": "davi.codepark@sent.com"
+  },
+  "keywords": [
+    "bunjs",
+    "vitejs",
+    "elysiajs",
+    "rpc"
+  ],
   "type": "module",
   "scripts": {
-    "dev-client": "bun --bun vite --port=3000",
-    "dev-server": "bun --hot src/server/main.ts",
-    "dev": "concurrently \"bun dev-client\" \"bun dev-server\"",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+    "dev-client": "bun ./scripts/dev/dev-client.bun.sh",
+    "dev-server": "bun ./scripts/dev/dev-server.bun.sh",
+    "dev": "bun ./scripts/dev/dev.bun.sh",
+    "build-client": "bun ./scripts/runners/build-client.bun.sh",
+    "build-server": "bun --print \"console.warn('Not implemented')\"",
+    "build": "bun ./scripts/runners/build.bun.sh",
+    "lint": "bun ./scripts/linter/lint.bun.sh"
   },
   "dependencies": {
     "@elysiajs/cors": "^1.0.2",
@@ -43,5 +60,17 @@
   },
   "peerDependencies": {
     "typescript": "5.4.3"
-  }
+  },
+  "engines": {
+    "bun": "1.1.0",
+    "node": "21.7.2"
+  },
+  "readme": "README.md",
+  "maintainers": [
+    {
+      "email": "davi.codepark@sent.com",
+      "name": "Davi Spindola"
+    }
+  ],
+  "packageManager": "bun@1.1.0"
 }
