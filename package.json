@@ -1,0 +1,47 @@
+{
+  "name": "d3-stack-template",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Davi Spindola",
+    "email": "davi.codepark@sent.com"
+  },
+  "type": "module",
+  "scripts": {
+    "dev-client": "bun --bun vite --port=3000",
+    "dev-server": "bun --hot src/server/main.ts",
+    "dev": "concurrently \"bun dev-client\" \"bun dev-server\"",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.0.2",
+    "@elysiajs/eden": "latest",
+    "@elysiajs/static": "^1.0.2",
+    "@tanstack/react-router": "^1.26.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.6.4",
+    "@tanstack/router-cli": "^1.23.0",
+    "@tanstack/router-devtools": "^1.26.7",
+    "@tanstack/router-vite-plugin": "^1.26.8",
+    "@types/bun": "latest",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react-swc": "^3.6.0",
+    "concurrently": "^8.2.2",
+    "elysia": "latest",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
+  },
+  "peerDependencies": {
+    "typescript": "5.4.3"
+  }
+}
