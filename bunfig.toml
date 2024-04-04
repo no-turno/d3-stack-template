@@ -27,5 +27,3 @@ root = "./__tests__"
 preload = ["./__tests__/happy-dom.ts"]
 smol = true
 coverageIgnoreSourcemaps = true
-# coverage = true
-# coverageThreshold = 0.9

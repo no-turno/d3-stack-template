@@ -20,6 +20,7 @@ function RootComponent() {
 				<div className="navigation">
 					<Link to="/">Home</Link>
 					<Link to="/about">About</Link>
+					<Link to="/config">Config</Link>
 				</div>
 				<br />
 				<Outlet />
