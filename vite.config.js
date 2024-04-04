@@ -24,4 +24,7 @@ export default defineConfig({
 		port: 3000,
 	},
 	appType: "spa",
+  build: {
+    outDir: "dist/client"
+  }
 });
