@@ -1,0 +1,27 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.6.3/schema.json",
+	"organizeImports": {
+		"enabled": true,
+		"ignore":["src/client/routeTree.gen.ts"],
+		"include": ["src/server", "src/client"]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"noBannedTypes": "off"
+			},
+			"correctness": {
+				"all": true
+			}
+		},
+		"ignore": ["**/routeTree.gen.{ts,js}"]
+	},
+	"vcs": {
+		"clientKind": "git",
+		"defaultBranch": "main",
+		"enabled": true,
+		"useIgnoreFile": true
+	}
+}
